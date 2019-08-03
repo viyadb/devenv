@@ -1,4 +1,4 @@
-from ubuntu:18.04
+FROM ubuntu:18.04
 
 MAINTAINER Michael Spector <spektom@gmail.com>
 
@@ -62,6 +62,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     /tmp/*
 
 RUN mkdir /viyadb
+
 VOLUME /viyadb
 
 CMD bash
