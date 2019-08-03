@@ -16,7 +16,7 @@ after_script:
 
 before_deploy:
   - docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
-  - docker tag ${IMAGE_NAME} ${IMAGE_NAME}:latest"
+  - docker tag ${IMAGE_NAME} ${IMAGE_NAME}:latest
 
 deploy:
   provider: script
